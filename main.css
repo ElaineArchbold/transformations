@@ -1,0 +1,35 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #e84610;
+    transform: translate(100px, 100px);
+    position: relative;
+    animation-name: double;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes double {
+    from {
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@-webkit-keyframes jump {
+    from {
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        width: 200px;
+        height: 200px;
+    }
+}
